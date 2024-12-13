@@ -265,7 +265,7 @@ body.index-page {
 body.index-page > * {
   grid-column: 2/3;
 }
-body.index-page > .page-header, body.index-page > .hero, body.index-page > .page-main, body.index-page > .offers {
+body.index-page > .page-header, body.index-page > .hero, body.index-page > .page-main, body.index-page > .offers, body.index-page > .social__list {
   margin-bottom: 50px;
 }
 /*# sourceMappingURL=index.css.map */
