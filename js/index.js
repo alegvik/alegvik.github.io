@@ -73,6 +73,11 @@
       dropBtn.addEventListener("click", function () {
         subMenu.classList.toggle("shown");
       });
+      dropBtn.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          subMenu.classList.toggle('shown');
+        }
+      });
     };
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       _loop();
