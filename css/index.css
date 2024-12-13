@@ -224,11 +224,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
 }
 .hero__logo {
-  width: 100px;
+  width: 160px;
   height: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .hero__name {
   color: #7a2e21;
