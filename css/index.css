@@ -247,11 +247,11 @@ a {
   color: #7a2e21;
 }
 
-#map {
+.map {
   display: block;
   height: 300px;
   border-radius: 16px;
-  background-color: lime;
+  background: #fcfcf7 url(../imgs/map-lazy.png) no-repeat center/cover;
   overflow: hidden;
 }
 
