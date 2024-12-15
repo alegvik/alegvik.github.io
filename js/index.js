@@ -87,6 +87,25 @@
   } finally {
     _iterator.f();
   }
+  document.addEventListener('DOMContentLoaded', function () {
+    var currentUrl = window.location.pathname;
+    var menuItems = menu.querySelectorAll('[class*="item"]');
+    menuItems.forEach(function (item) {
+      if (item.children[0].getAttribute('href') === currentUrl) {
+        item.classList.add('current-page');
+      }
+    });
+  });
+
+  var mapElement = document.querySelector("#map");
+  var mapScriptElement = document.createElement("script");
+  mapScriptElement.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae09a4cda94f3d6e3a738ab9e18b1031be6f110a28a74f7e53c100e83ba1fd1df&amp;lang=ru_RU&amp;scroll=true";
+  mapScriptElement.setAttribute("async", "");
+  globalThis.addEventListener("load", function () {
+    setTimeout(function () {
+      mapElement.appendChild(mapScriptElement);
+    }, 500);
+  });
 
 })();
 //# sourceMappingURL=index.js.map

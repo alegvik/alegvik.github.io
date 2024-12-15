@@ -93,6 +93,10 @@ button {
   margin-bottom: 10px;
 }
 
+a {
+  color: #7a2e21;
+}
+
 .page-header {
   padding-top: 20px;
   display: -webkit-box;
@@ -125,6 +129,13 @@ button {
   text-align: center;
   list-style: none;
   cursor: pointer;
+}
+.main-menu__item.current-page a {
+  color: #7a2e21;
+  text-decoration: underline;
+  text-decoration-color: rgba(122, 46, 33, 0.3);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 .main-menu__item > a {
   display: -webkit-box;
@@ -236,7 +247,7 @@ button {
   color: #7a2e21;
 }
 
-.map {
+#map {
   display: block;
   height: 300px;
   border-radius: 16px;
@@ -254,6 +265,16 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+.socials__item use {
+  width: 200px;
+  height: 100px;
+}
+.socials__item svg {
+  width: 100px;
+  height: 100px;
+  max-width: 50px;
+  max-height: 50px;
+}
 
 #icon-composition {
   fill: white;
@@ -267,7 +288,7 @@ body.index-page {
 body.index-page > * {
   grid-column: 2/3;
 }
-body.index-page > .page-header, body.index-page > .hero, body.index-page > .page-main, body.index-page > .offers, body.index-page > .social__list {
+body.index-page > .page-header, body.index-page > .hero, body.index-page > .page-main, body.index-page > .offers, body.index-page > .socials {
   margin-bottom: 50px;
 }
 /*# sourceMappingURL=index.css.map */
