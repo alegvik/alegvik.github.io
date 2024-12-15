@@ -104,7 +104,7 @@
   globalThis.addEventListener("load", function () {
     setTimeout(function () {
       mapElement.appendChild(mapScriptElement);
-    }, 1000);
+    }, 2000);
   });
 
 })();
